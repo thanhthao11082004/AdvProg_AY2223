@@ -82,9 +82,7 @@ for ( int i = 0 ; i < int (answer.size()) ; i ++) answer[i] = tolower(answer[i])
 string generateHiddenCharacters(string answerWord){
     // TODO: Based on answerWord's length, generate hidden characters in form of "---"
     string secretWord;
-for ( int i = 0 ; i < int ( answerWord.size()) ; i ++){
-    secretWord[i] = '-';
-}
+    secretWord = string ( answerWord.size() , '-');
     return secretWord;
 }
 
@@ -119,7 +117,8 @@ void updateSecretWord(string& secretWord, const char ch, const string& word)
 ***/
 void updateEnteredChars(const char ch, string& chars){
     // TODO: append the character ch is in end of the text chars
-chars += ch + " ";
+chars += ch ;
+chars += " ";
 }
 
 /***
@@ -163,7 +162,7 @@ void processData(const char ch, const string& word,
         }
         else {
             updateIncorrectGuess(incorrectGuess);
-            updateEnteredChars(ch , correctChars);
+            updateEnteredChars(ch , incorrectChars);
         }
     
 }
