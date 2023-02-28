@@ -49,11 +49,11 @@ vector<Position> Snake::getPositions() const
  * 		// none
  * 
 ***/
-void Snake::growAtFront(Position newPosition)
+void Snake::growAtFront(Position newPosition) // them dau
 {
     // head of snake grow at new position
-	
     /* YOUR CODE HERE */
+
 }
 
 
