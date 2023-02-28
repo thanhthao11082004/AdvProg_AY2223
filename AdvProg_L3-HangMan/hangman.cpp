@@ -14,7 +14,7 @@ using std::cin;
     Returns:
         number (int) : random number in range [min; max]
 ***/
-int generateRandomNumber(const int min, const int max)
+int generateRandomNumber(const int min, const int max )
 {
     // TODO: Return a random integer number between min and max
     return rand()% ( max - min + 1) + min ;
