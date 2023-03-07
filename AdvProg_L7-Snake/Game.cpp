@@ -49,7 +49,7 @@ Game::~Game()
  * 		// none
  * 
 ***/
-
+//
 void Game::snakeMoveTo(Position pos) {
 	//  START CODE HERE
 	//
